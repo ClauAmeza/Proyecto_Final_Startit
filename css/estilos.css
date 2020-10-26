@@ -1,15 +1,11 @@
 @charset "UTF-8";
 body {
-  background: #FAFAFA;
-  background-image: url(imagenes/curvaBanner.svg);
-  background-repeat: no-repeat;
-  background-position: center; }
+  background: #FAFAFA; }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #ffffff;
   background-color: #0455BF;
   font-family: 'Poppins', sans-serif; }
   nav ul {
@@ -20,6 +16,14 @@ nav {
       margin: 15px;
       padding: 10px 20px;
       position: relative; }
+      nav ul li a {
+        font-size: 17px;
+        color: #ffffff;
+        text-decoration: none; }
+
+nav ul li a:hover {
+  color: #F25C05;
+  text-decoration: none; }
 
 .logo {
   width: 160px;
@@ -27,53 +31,77 @@ nav {
 
 .gridInicio {
   display: grid;
+  justify-items: center;
   grid-template-columns: 33% auto 33%;
-  grid-template-rows: 1fr 100px auto;
-  grid-template-areas: "banner banner banner" ". inicioTitle ." "escucha desarrollo implementación"; }
-
-.banner {
-  grid-area: banner;
-  /*background-image: url(imagenes/curvaBanner.svg);
-	background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;*/ }
+  grid-template-rows: 100px auto;
+  grid-template-areas: ". inicioTitle ." "escucha desarrollo implementación"; }
 
 .inicioTitle {
-  grid-area: inicioTitle; }
+  grid-area: inicioTitle;
+  margin-top: 35px; }
 
 .articleIni1 {
-  grid-area: escucha; }
+  grid-area: escucha;
+  /*display: flex;
+	justify-content: space-evenly;*/ }
 
 .articleIni2 {
-  grid-area: desarrollo; }
+  grid-area: desarrollo;
+  /*display: flex;
+	justify-content: space-evenly;*/ }
 
 .articleIni3 {
-  grid-area: implementación; }
+  grid-area: implementación;
+  /*display: flex;
+	justify-content: space-evenly;*/ }
+
+.banner {
+  width: 100%; }
+
+/*.bannerText {
+	font-family: 'Poppins', sans-serif;
+	font-size: 38px;
+	font-weight: bold;
+	color: #0455BF;
+	text-align: left;
+}*/
+.imgArticle {
+  width: 50%;
+  display: block;
+  margin: auto; }
 
 .gridServicios {
   display: grid;
+  justify-items: center;
+  margin: 35px 35px 0px 35px;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 200px 1fr 1fr;
-  grid-template-areas: "titulo titulo" "web app" "disenio ux"; }
-
-.serviciosTitle {
-  grid-area: titulo; }
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "web app" "disenio ux"; }
 
 .boxWeb {
-  grid-area: web; }
+  grid-area: web;
+  /*display: flex;
+	justify-content: space-evenly;*/ }
 
 .boxApp {
-  grid-area: app; }
+  grid-area: app;
+  /*display: flex;
+	justify-content: space-evenly;*/ }
 
 .boxDisenio {
-  grid-area: disenio; }
+  grid-area: disenio;
+  /*display: flex;
+	justify-content: space-evenly;*/ }
 
 .boxUx {
-  grid-area: ux; }
+  grid-area: ux;
+  /*display: flex;
+	justify-content: space-evenly;*/ }
 
 .gridTrabajos {
   display: grid;
   justify-items: center;
+  margin: 35px 35px 0px 35px;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "trabajoUno trabajoDos" "trabajoTres trabajoCuatro"; }
@@ -93,6 +121,7 @@ nav {
 .gridNosotros {
   display: grid;
   justify-items: center;
+  margin: 35px 35px 0px 35px;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 1fr;
   grid-template-areas: "nosotros1 nosotros2 nosotros3 nosotros4"; }
@@ -112,70 +141,71 @@ nav {
 .gridContactanos {
   display: grid;
   grid-template-columns: 40% 60%;
-  grid-template-rows: 200px 1fr;
-  grid-template-areas: "contactanos contactanos" "datos formulario"; }
-
-.contactanosTitle {
-  grid-area: contactanos; }
+  margin: 35px 35px 0px 35px;
+  grid-template-rows: 1fr;
+  grid-template-areas: "datos formulario"; }
 
 .datosContacto {
-  grid-area: datos; }
+  grid-area: datos;
+  margin-top: 60px; }
 
 .formulario {
   grid-area: formulario; }
 
-.articleBox {
-  border: solid 1px;
-  margin-top: 20px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  padding: 10px 15px;
-  display: inline-block; }
+.ContactoText {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 45px;
+  margin-top: 15px; }
 
+.formText {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif; }
+
+.mapa {
+  margin: 20px 0px 0px 45px; }
+
+/*.articleBox {
+	border: solid 1px;
+	margin: 20px 10px 20px 10px;
+	padding: 10px 15px;
+	display: inline-block;
+}*/
 .inicioTitle {
-  font-family: 'Poppins', sans-serif;
-  font-size: 24px;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: #0455BF;
+  font-size: 24px;
   text-align: center; }
 
 .sectionTitle {
   font-size: 32px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: #0455BF; }
 
 .sectionText {
-  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   text-align: center; }
 
 .articleTitle {
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold; }
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center; }
 
 .articleText {
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: normal;
+  font-family: "Montserrat", sans-serif;
   text-align: center; }
 
 .sectionName {
   margin: 25px; }
-
-.bannerText {
-  font-family: 'Poppins', sans-serif;
-  font-size: 38px;
-  font-weight: bold;
-  color: #0455BF;
-  text-align: left; }
-
-.imgArticle {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto; }
 
 .icono {
   width: 28px;
@@ -183,13 +213,13 @@ nav {
 
 .boton {
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
   color: #ffffff;
   border: none;
   border-radius: 30px;
   padding: 13px 23px;
   margin: 10px;
-  font-weight: normal;
   background: #F25C05;
   opacity: 75%; }
 

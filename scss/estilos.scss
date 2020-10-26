@@ -1,15 +1,26 @@
+
+$fontTitle: 'Poppins', sans-serif;
+$fontBody: 'Montserrat', sans-serif;
+
+@mixin basicText {
+	font-size: 16px;
+	font-weight: normal;
+	font-family: $fontBody;	
+}
+@mixin mainTitle {
+	font-family: $fontTitle;
+	font-weight: bold;
+	color: #0455BF;
+}
+
 body {
 	background: #FAFAFA;
-	background-image: url(imagenes/curvaBanner.svg);
-	background-repeat: no-repeat;
-    background-position: center;
 }
 
 nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	color: #ffffff;
 	background-color: #0455BF;
 	font-family: 'Poppins', sans-serif;
 	ul {
@@ -21,9 +32,20 @@ nav {
 			margin: 15px;
 			padding: 10px 20px;
 			position: relative;
+
+			a {
+				font-size: 17px;
+				color: #ffffff;
+				text-decoration: none;
+			}
 		}
 		
 	}
+}
+
+nav ul li a:hover {
+	color: #F25C05;
+	text-decoration: none;
 }
 .logo {
 	width: 160px;
@@ -31,61 +53,81 @@ nav {
 }
 .gridInicio {
 	display: grid;
+	justify-items:center;
 	grid-template-columns: 33% auto 33%;
-	grid-template-rows: 1fr 100px auto; 
+	grid-template-rows: 100px auto; 
 	grid-template-areas:
-	"banner banner banner"
 	". inicioTitle ."
 	"escucha desarrollo implementación"
 }
-.banner {
-	grid-area: banner;
-	/*background-image: url(imagenes/curvaBanner.svg);
-	background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;*/
-}
 .inicioTitle {
 	grid-area: inicioTitle;
+	margin-top: 35px;
 }
 .articleIni1 {
 	grid-area: escucha;
+	/*display: flex;
+	justify-content: space-evenly;*/
 }
 .articleIni2 {
 	grid-area: desarrollo;
+	/*display: flex;
+	justify-content: space-evenly;*/
 }
 .articleIni3 {
 	grid-area: implementación;
+	/*display: flex;
+	justify-content: space-evenly;*/
 }
-
-
+.banner {
+	width: 100%;
+}
+/*.bannerText {
+	font-family: 'Poppins', sans-serif;
+	font-size: 38px;
+	font-weight: bold;
+	color: #0455BF;
+	text-align: left;
+}*/
+.imgArticle {
+	width: 50%;
+	display:block;
+	margin:auto;
+}
 .gridServicios {
 	display: grid;
+	justify-items:center;
+	margin: 35px 35px 0px 35px;
 	grid-template-columns: 50% 50%;
-	grid-template-rows: 200px 1fr 1fr; 
+	grid-template-rows: 50% 50%; 
 	grid-template-areas:
-	"titulo titulo"
 	"web app"
 	"disenio ux"
 }
-.serviciosTitle {
-	grid-area: titulo;
-}
 .boxWeb {
 	grid-area: web;
+	/*display: flex;
+	justify-content: space-evenly;*/
 }
 .boxApp {
 	grid-area: app;
+	/*display: flex;
+	justify-content: space-evenly;*/
 }
 .boxDisenio {
 	grid-area: disenio;
+	/*display: flex;
+	justify-content: space-evenly;*/
 }
 .boxUx {
 	grid-area: ux; 
+	/*display: flex;
+	justify-content: space-evenly;*/
 }
 .gridTrabajos {
 	display: grid;
 	justify-items:center;
+	margin: 35px 35px 0px 35px;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: 1fr 1fr;
 	grid-template-areas: 
@@ -108,6 +150,7 @@ nav {
 .gridNosotros {
 	display: grid;
 	justify-items:center;
+	margin: 35px 35px 0px 35px;
 	grid-template-columns: 25% 25% 25% 25%;
 	grid-template-rows: 1fr;
 	grid-template-areas: 
@@ -128,94 +171,83 @@ nav {
 .gridContactanos {
 	display: grid;
 	grid-template-columns: 40% 60%;
-	grid-template-rows: 200px 1fr;
+	margin: 35px 35px 0px 35px;
+	grid-template-rows:1fr;
 	grid-template-areas: 
-	"contactanos contactanos"
 	"datos formulario"
-}
-.contactanosTitle {
-	grid-area: contactanos;
 }
 .datosContacto {
 	grid-area: datos;
+	margin-top: 60px;
 }
 .formulario {
 	grid-area: formulario;
 }
-.articleBox {
+.ContactoText {
+	@include basicText;
+    margin-left: 45px;
+    margin-top: 15px;
+}
+.formText {
+	@include basicText;
+}
+
+.mapa {
+	margin: 20px 0px 0px 45px;
+}
+/*.articleBox {
 	border: solid 1px;
-	margin-top: 20px;
-	margin-right: 10px;  
-	margin-bottom: 20px;
-	margin-left: 10px;
+	margin: 20px 10px 20px 10px;
 	padding: 10px 15px;
 	display: inline-block;
-}
+}*/
 .inicioTitle {
-	font-family: 'Poppins', sans-serif;
+	@include mainTitle;
 	font-size: 24px;
-	font-weight: bold;
-	color: #0455BF;
 	text-align: center;
 }
 .sectionTitle {
 	font-size: 32px;
-	font-family: 'Poppins', sans-serif;
-	font-weight: bold;
-	color: #0455BF;
+	@include mainTitle;
 }
 .sectionText {
-	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-family: $fontBody;
 	font-weight: normal;
 	text-align: center;
 }
 .articleTitle {
 	font-size: 18px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: $fontBody;
 	font-weight: bold;
+	text-align: center;
 }
 .articleText {
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: normal;
+	@include basicText;
 	text-align: center;
 }
 .sectionName {
 	margin: 25px;
-}
-.bannerText {
-	font-family: 'Poppins', sans-serif;
-	font-size: 38px;
-	font-weight: bold;
-	color: #0455BF;
-	text-align: left;
-}
-.imgArticle {
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
 }
 .icono {
 	width: 28px;
 	height: 28px;
 }
 .boton {
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
+	@include basicText;
 	color: #ffffff;
 	border: none;
 	border-radius: 30px;
 	padding: 13px 23px;
 	margin: 10px;
-	font-weight: normal;
 	background: #F25C05;
 	opacity: 75%;
 }
 .transition:hover {
 	background: #F25C05;
 	opacity: 100%;
-
 }
+
 footer {
 	display: flex;
 	background-image: linear-gradient(to bottom, #0455BF, #000046);

@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<meta name="description" content="Contactanos, y contanos tus ideas. Te ayudamos a crear tu sitio web desde cero">
+    <meta name="keywords" content="Desarrollo, app, aplicación, página web, diseño, ux, consultoría ux, análisis ux, experiencia de usuario, sitio web">
+	<title>Contactanos | Start-it</title>
         <!-- CSS only -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -18,70 +20,78 @@
 	<header>
 		<nav class="nav">
 			<a href="index.html"><img src="imagenes/logo.svg" class="logo" alt="logo Startit"></a>
-			<ul>
-				<li><a href="servicios.html"></a>SERVICIOS</li>
-				<li><a href="trabajos.html"></a>TRABAJOS</li>
-				<li><a href="nosotros.html"></a>NOSOTROS</li>
-				<li><a href="contactanos.html"></a>CONTACTANOS</li>
+			<ul class="nav justify-content-end">
+				<li class="">
+					<a href="servicios.html">SERVICIOS</a>
+				</li>
+				<li>
+					<a href="trabajos.html">TRABAJOS</a>
+				</li>
+				<li>
+					<a href="nosotros.html">NOSOTROS</a>
+				</li>
+				<li>
+					<a href="contactanos.html">CONTACTANOS
+					</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
-<section class="gridContactanos">
-	<div class="contactanosTitle">
+<section>
+	<div class="sectionName">
 		<p class="sectionTitle">CONTACTANOS</p>
 		<P class="sectionText" >No dude en consultarnos si tiene una idea o quiere mejorar algun proceso.<br>¡Podemos hacerlo!</P>
-	<br>
-	<br>
 	</div>
-
-	<div class="datosContacto">
-		<img src="imagenes/llamar.svg" alt="telefono" class="rounded float-left icono">
-		<p class="textoContacto">4545-4545</p>
-		<img src="imagenes/mail.svg" alt="mail" class="rounded float-left icono">
-		<p class="textoContacto">mail@mail.com</p>
-        <img src="imagenes/mapa.svg" alt="mapa" class="rounded float-left icono">
-		<p class="textoContacto">Avenida calle 123 - Buenos Aires</p>
-		<img src="imagenes/mapa.png" alt="mapa" class="">
-	</div>
-	<div class="formulario">
-		<form action="#" method="Post" class="texto">
-			 <div class="form-row">
-    			<div class="form-group col-md-6">
-      				<label for="inputEmail4">Nombre</label>
-      				<input type="email" class="form-control" id="inputEmail4">
-    			</div>
-   			 	<div class="form-group col-md-6">
-      				<label for="inputPassword4">Teléfono</label>
-      				<input type="password" class="form-control" id="inputPassword4">
-    			</div>
-  			</div>
-			<div class="form-group">
-			    <label for="exampleInputPassword1">Correo electrónico</label>
-			    <input type="password" class="form-control" id="exampleInputPassword1">
-			</div>
-			<div class="form-group">
-      			<label for="inputState">Servicio que te interesa</label>
-      			<select id="inputState" class="form-control">
-        			<option selected>Elegí un servicio</option>
-        			<option>Desarrollo Web</option>
-        			<option>DEsarrollo de app</option>
-        			<option>Diseño web a medida</option>
-        			<option>Consultoría y Diseño UX</option>
-        			<option>Aún no sé qué servicio</option>
-      			</select>
-    		</div>
-    		<div class="form-group">
-    			<label for="exampleFormControlTextarea1">Dejanos tu consulta</label>
-    			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  			</div>
-			
-			<div class="form-group form-check">
-			    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-			    <label class="form-check-label" for="exampleCheck1">Deseo suscribirme al newsletter</label>
-			</div>
-			<button class="boton transition" type="Reset" name="Reset" value="Limpiar formulario">Limpiar formulario</button>
-			<button class="boton transition" type="Submit" name="Submit" value="Enviar formulario">Enviar formulario</button>
-		</form>
+	<div class="gridContactanos">
+		<div class="datosContacto">
+			<img src="imagenes/llamar.svg" alt="telefono" class="rounded float-left icono">
+			<p class="ContactoText">4545-4545</p>
+			<img src="imagenes/mail.svg" alt="mail" class="rounded float-left icono">
+			<p class="ContactoText">mail@mail.com</p>
+	        <img src="imagenes/mapa.svg" alt="mapa" class="rounded float-left icono">
+			<p class="ContactoText">Avenida calle 123 - Buenos Aires</p>
+			<img src="imagenes/mapa.png" alt="mapa" class="mapa">
+		</div>
+		<div class="formulario formText">
+			<form action="#" method="Post" class="texto">
+				 <div class="form-row">
+	    			<div class="form-group col-md-6">
+	      				<label for="inputEmail4">Nombre</label>
+	      				<input type="email" class="form-control" id="inputEmail4">
+	    			</div>
+	   			 	<div class="form-group col-md-6">
+	      				<label for="inputPassword4">Teléfono</label>
+	      				<input type="password" class="form-control" id="inputPassword4">
+	    			</div>
+	  			</div>
+				<div class="form-group">
+				    <label for="exampleInputPassword1">Correo electrónico</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1">
+				</div>
+				<div class="form-group">
+	      			<label for="inputState">Servicio que te interesa</label>
+	      			<select id="inputState" class="form-control">
+	        			<option selected>Elegí un servicio</option>
+	        			<option>Desarrollo Web</option>
+	        			<option>DEsarrollo de app</option>
+	        			<option>Diseño web a medida</option>
+	        			<option>Consultoría y Diseño UX</option>
+	        			<option>Aún no sé qué servicio</option>
+	      			</select>
+	    		</div>
+	    		<div class="form-group">
+	    			<label for="exampleFormControlTextarea1">Dejanos tu consulta</label>
+	    			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+	  			</div>
+				
+				<div class="form-group form-check">
+				    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+				    <label class="form-check-label" for="exampleCheck1">Deseo suscribirme al newsletter</label>
+				</div>
+				<button class="boton transition" type="Reset" name="Reset" value="Limpiar formulario">Limpiar formulario</button>
+				<button class="boton transition" type="Submit" name="Submit" value="Enviar formulario">Enviar formulario</button>
+			</form>
+		</div>
 	</div>
 </section>
 	
