@@ -1,0 +1,213 @@
+@charset "UTF-8";
+body {
+  background: #FAFAFA;
+  background-image: url(imagenes/curvaBanner.svg);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  background-color: #0455BF;
+  font-family: 'Poppins', sans-serif; }
+  nav ul {
+    list-style-type: none;
+    padding-right: 20px; }
+    nav ul li {
+      display: inline-block;
+      margin: 15px;
+      padding: 10px 20px;
+      position: relative; }
+
+.logo {
+  width: 160px;
+  padding-left: 25px; }
+
+.gridInicio {
+  display: grid;
+  grid-template-columns: 33% auto 33%;
+  grid-template-rows: 1fr 100px auto;
+  grid-template-areas: "banner banner banner" ". inicioTitle ." "escucha desarrollo implementación"; }
+
+.banner {
+  grid-area: banner;
+  /*background-image: url(imagenes/curvaBanner.svg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;*/ }
+
+.inicioTitle {
+  grid-area: inicioTitle; }
+
+.articleIni1 {
+  grid-area: escucha; }
+
+.articleIni2 {
+  grid-area: desarrollo; }
+
+.articleIni3 {
+  grid-area: implementación; }
+
+.gridServicios {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 200px 1fr 1fr;
+  grid-template-areas: "titulo titulo" "web app" "disenio ux"; }
+
+.serviciosTitle {
+  grid-area: titulo; }
+
+.boxWeb {
+  grid-area: web; }
+
+.boxApp {
+  grid-area: app; }
+
+.boxDisenio {
+  grid-area: disenio; }
+
+.boxUx {
+  grid-area: ux; }
+
+.gridTrabajos {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "trabajoUno trabajoDos" "trabajoTres trabajoCuatro"; }
+
+.trabajo1 {
+  grid-area: trabajoUno; }
+
+.trabajo2 {
+  grid-area: trabajoDos; }
+
+.trabajo3 {
+  grid-area: trabajoTres; }
+
+.trabajo4 {
+  grid-area: trabajoCuatro; }
+
+.gridNosotros {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "nosotros1 nosotros2 nosotros3 nosotros4"; }
+
+.nosotros1 {
+  grid-area: nosotros1; }
+
+.nosotros2 {
+  grid-area: nosotros2; }
+
+.nosotros3 {
+  grid-area: nosotros3; }
+
+.nosotros4 {
+  grid-area: nosotros4; }
+
+.gridContactanos {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 200px 1fr;
+  grid-template-areas: "contactanos contactanos" "datos formulario"; }
+
+.contactanosTitle {
+  grid-area: contactanos; }
+
+.datosContacto {
+  grid-area: datos; }
+
+.formulario {
+  grid-area: formulario; }
+
+.articleBox {
+  border: solid 1px;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding: 10px 15px;
+  display: inline-block; }
+
+.inicioTitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0455BF;
+  text-align: center; }
+
+.sectionTitle {
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #0455BF; }
+
+.sectionText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  text-align: center; }
+
+.articleTitle {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold; }
+
+.articleText {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  text-align: center; }
+
+.sectionName {
+  margin: 25px; }
+
+.bannerText {
+  font-family: 'Poppins', sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+  color: #0455BF;
+  text-align: left; }
+
+.imgArticle {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.icono {
+  width: 28px;
+  height: 28px; }
+
+.boton {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  padding: 13px 23px;
+  margin: 10px;
+  font-weight: normal;
+  background: #F25C05;
+  opacity: 75%; }
+
+.transition:hover {
+  background: #F25C05;
+  opacity: 100%; }
+
+footer {
+  display: flex;
+  background-image: linear-gradient(to bottom, #0455BF, #000046);
+  justify-content: flex-end;
+  padding-right: 25px;
+  height: 70px;
+  margin-top: 45px; }
+  footer div {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px 5px 0px 5px; }
+    footer div img {
+      width: 22px;
+      height: 22px; }
