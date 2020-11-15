@@ -1,267 +1,222 @@
 
-$fontTitle: 'Poppins', sans-serif;
-$fontBody: 'Montserrat', sans-serif;
+$fontTitle: 'Montserrat', sans-serif;
+$fontBody: 'Roboto', sans-serif;
 
 @mixin basicText {
 	font-size: 16px;
-	font-weight: normal;
+	font-weight: 300;
 	font-family: $fontBody;	
 }
 @mixin mainTitle {
 	font-family: $fontTitle;
-	font-weight: bold;
 	color: #0455BF;
+	font-weight: 600;
 }
-
-body {
-	background: #FAFAFA;
-}
-
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #0455BF;
-	font-family: 'Poppins', sans-serif;
-	ul {
-		list-style-type: none;
-		padding-right: 20px;
-		
-		li {
-			display: inline-block;
-			margin: 15px;
-			padding: 10px 20px;
-			position: relative;
-
-			a {
-				font-size: 17px;
-				color: #ffffff;
-				text-decoration: none;
-			}
-		}
-		
-	}
-}
-
-nav ul li a:hover {
-	color: #F25C05;
-	text-decoration: none;
-}
-.logo {
-	width: 160px;
-	padding-left: 25px;
-}
-.gridInicio {
-	display: grid;
-	justify-items:center;
-	grid-template-columns: 33% auto 33%;
-	grid-template-rows: 100px auto; 
-	grid-template-areas:
-	". inicioTitle ."
-	"escucha desarrollo implementación"
-}
-.inicioTitle {
-	grid-area: inicioTitle;
-	margin-top: 35px;
-}
-.articleIni1 {
-	grid-area: escucha;
-	/*display: flex;
-	justify-content: space-evenly;*/
-}
-.articleIni2 {
-	grid-area: desarrollo;
-	/*display: flex;
-	justify-content: space-evenly;*/
-}
-.articleIni3 {
-	grid-area: implementación;
-	/*display: flex;
-	justify-content: space-evenly;*/
-}
-.banner {
-	width: 100%;
-}
-/*.bannerText {
-	font-family: 'Poppins', sans-serif;
-	font-size: 38px;
-	font-weight: bold;
-	color: #0455BF;
-	text-align: left;
-}*/
-.imgArticle {
-	width: 50%;
-	display:block;
-	margin:auto;
-}
-.gridServicios {
-	display: grid;
-	justify-items:center;
-	margin: 35px 35px 0px 35px;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 50% 50%; 
-	grid-template-areas:
-	"web app"
-	"disenio ux"
-}
-.boxWeb {
-	grid-area: web;
-	/*display: flex;
-	justify-content: space-evenly;*/
-}
-.boxApp {
-	grid-area: app;
-	/*display: flex;
-	justify-content: space-evenly;*/
-}
-.boxDisenio {
-	grid-area: disenio;
-	/*display: flex;
-	justify-content: space-evenly;*/
-}
-.boxUx {
-	grid-area: ux; 
-	/*display: flex;
-	justify-content: space-evenly;*/
-}
-.gridTrabajos {
-	display: grid;
-	justify-items:center;
-	margin: 35px 35px 0px 35px;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 1fr 1fr;
-	grid-template-areas: 
-	"trabajoUno trabajoDos"
-	"trabajoTres trabajoCuatro"
-}
-
-.trabajo1 {
-	grid-area: trabajoUno;
-}
-.trabajo2 {
-	grid-area: trabajoDos;
-}
-.trabajo3 {
-	grid-area: trabajoTres;
-}
-.trabajo4 {
-	grid-area: trabajoCuatro;
-}
-.gridNosotros {
-	display: grid;
-	justify-items:center;
-	margin: 35px 35px 0px 35px;
-	grid-template-columns: 25% 25% 25% 25%;
-	grid-template-rows: 1fr;
-	grid-template-areas: 
-	"nosotros1 nosotros2 nosotros3 nosotros4"
-}
-.nosotros1{
-	grid-area: nosotros1;
-}
-.nosotros2{
-	grid-area: nosotros2;
-}
-.nosotros3{
-	grid-area: nosotros3;
-}
-.nosotros4{
-	grid-area: nosotros4;
-}
-.gridContactanos {
-	display: grid;
-	grid-template-columns: 40% 60%;
-	margin: 35px 35px 0px 35px;
-	grid-template-rows:1fr;
-	grid-template-areas: 
-	"datos formulario"
-}
-.datosContacto {
-	grid-area: datos;
-	margin-top: 60px;
-}
-.formulario {
-	grid-area: formulario;
-}
-.ContactoText {
-	@include basicText;
-    margin-left: 45px;
-    margin-top: 15px;
-}
-.formText {
-	@include basicText;
-}
-
-.mapa {
-	margin: 20px 0px 0px 45px;
-}
-/*.articleBox {
-	border: solid 1px;
-	margin: 20px 10px 20px 10px;
-	padding: 10px 15px;
-	display: inline-block;
-}*/
-.inicioTitle {
-	@include mainTitle;
-	font-size: 24px;
-	text-align: center;
-}
-.sectionTitle {
-	font-size: 32px;
-	@include mainTitle;
-}
-.sectionText {
-	font-size: 20px;
-	font-family: $fontBody;
-	font-weight: normal;
-	text-align: center;
-}
-.articleTitle {
+@mixin btnBasic {
+	font-family: $fontTitle;
+	font-weight:400;
 	font-size: 18px;
-	font-family: $fontBody;
-	font-weight: bold;
-	text-align: center;
-}
-.articleText {
-	@include basicText;
-	text-align: center;
-}
-.sectionName {
-	margin: 25px;
-}
-.icono {
-	width: 28px;
-	height: 28px;
-}
-.boton {
-	@include basicText;
 	color: #ffffff;
 	border: none;
 	border-radius: 30px;
 	padding: 13px 23px;
 	margin: 10px;
 	background: #F25C05;
-	opacity: 75%;
+}
+@mixin BannerTextBasic {
+	font-family: $fontTitle;
+	color: #ffffff;
+	font-weight: 700;
+}
+body {
+	background: #FFFFFF;
+}
+h1 {
+	@include mainTitle;
+	font-size: 45px;
+}
+
+h2 {
+	@include mainTitle;
+	font-size: 32px; 
+	margin: 25px 0px 25px 0px;
+	text-align: center;
+}
+h3 {
+	font-family: $fontTitle;
+	font-size: 34px;
+	font-weight: 700;
+}
+h5 {
+	font-family: $fontBody;
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+}
+h6 {
+	color: #ffffff;
+	@include basicText; 
+}
+.bannerText {
+	@include BannerTextBasic;
+	font-size: 45px;
+}
+.SectionHome2TitleList {
+	font-size: 18px;
+	font-family: $fontBody;
+	font-weight: 500;
+}
+.sectionText {
+	font-size: 20px;
+	font-family: $fontBody;
+	font-weight: 300;
+	margin-top: 25px;
+	text-align: left;
+}
+.h5BodyText {
+	@include basicText;
+}
+.formText {
+	@include basicText;
+}
+.navbarStyle {
+	background-color: #0455BF;
+	font-family: $fontBody;
+	box-shadow: 2px 2px 5px #373B44;
+}
+.logo {
+	width: 160px;
+	padding-left: 25px;
+}
+.boton {
+	@include btnBasic;
+	opacity: 100%;
+	transition-property: padding, font-size, box-shadow;
+	transition-duration: 1s;
+	transition-timing: ease-out;
 }
 .transition:hover {
+	font-size: 19px;
+	padding: 14px 24px;
+	box-shadow: 2px 2px 5px #373B44;
+}
+.fondoBanner {
+  background-image: url(../imagenes/curvaBanner.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.fondo {
+	background-color: rgba(4, 85, 191, 0.06);
+}
+.fondoCarousel {
+	background-image: url(../imagenes/section3.svg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size:auto;
+}
+.sectionTitle {
+	margin: 120px 25px 55px 25px;
+}
+.ContactoText {
+	@include basicText;
+    margin-left: 45px;
+    margin-top: 15px;
+}
+.mapa {
+	margin: 20px 0px 0px 45px;
+}
+.icono {
+	width: 25px;
+	height: 25px;
+}
+.botonForm {
+	@include btnBasic;
+	opacity: 75%;
+}
+.transitionBtnForm:hover {
 	background: #F25C05;
 	opacity: 100%;
 }
-
+.spacingMtb40 {
+	margin: 40px 0px 40px 0px;
+}
+.spacingMrl10 {
+	margin: 0px 10px 0px 10px;
+}
+.spacingCarousel {
+	padding: 35px 0px 35px 0px;
+	margin: 60px 0px 60px 80px;
+}
+.spacingP35 {
+	padding: 35px;
+}
+.spacingPl35 {
+	padding: 0px 0px 0px 35px;
+}
+.spacingMt35l80 {
+	margin: 35px 0px 0px 80px;
+}
+.spacingMt65 {
+	margin-top: 65px;
+}
+.spacingP35M60 {
+	padding: 35px 0px 35px 0px;
+	margin: 60px 0px 60px 0px;
+}
 footer {
-	display: flex;
 	background-image: linear-gradient(to bottom, #0455BF, #000046);
-	justify-content: flex-end;
-	padding-right: 25px;
-	height: 70px;
 	margin-top: 45px;
+
 	div {
-		display: inline-block;
 		padding: 5px 10px;
 		margin: 10px 5px 0px 5px;
 		img {
 			width: 22px;
 			height: 22px;
+			margin: 0px 10px 0px 10px;
 		}
 	}
+@media screen and (max-width: 412px) {
+	.bannerText {
+		@include BannerTextBasic;
+		font-size: 32px;
+	}
+	h1 {
+		@include mainTitle;
+		font-weight: 700;
+		font-size: 32px;
+	}
+	h3 {
+		font-family: $fontTitle;
+		font-size: 28px;
+		font-weight: 500;
+	}
+	.spacingCarousel {
+		padding: 0px;
+		margin: 0px;
+	}
+	.spacingMt35l80 {
+		margin: 0px;
+	}
+}
+@media screen and (max-width: 995px) and (min-width: 765px) {
+	.bannerText {
+		padding-right: 35px;
+	}
+}
+@media screen and (max-width: 992px) {
+	.spacingMrl10 {
+	margin: 30px 0px 30px 0px;
+	}
+
+}
+@media screen and (max-width: 768px) {
+	.spacingForm {
+	margin-top: 60px;
+	}
+	.spacingMt35l80 {
+		margin: 0px;
+	}
+}
 }

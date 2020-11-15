@@ -3,82 +3,172 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="En Start-it te ayudamos a crear tu sitio web desde cero. Realizamos desarrollo web y app, diseño web a medida, y consultoría y diseño UX">
+	<meta name="description" content="En Start-it te ayudamos a crear tu sitio web desde cero. Realizamos desarrollo de web y app, diseño web a medida, y consultoría y diseño UX">
 	<meta name="keywords" content="Desarrollo, app, aplicación, página web, diseño, ux, consultoría ux, análisis ux, experiencia de usuario, sitio web">
 	<title>Start-it</title>
 	<!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-    <!-- jQuery and JS bundle w/ Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+	<!-- Fuentes -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<!-- Animation -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<!-- FavIcon -->
+	<link rel="icon" href="imagenes/favicon.ico"/>
+	<!-- Estilos -->
 	<link rel="stylesheet" href="css/estilos.css"/>
 </head>
 
 <body>
+	<!--navBar-->
 	<header>
-		<nav>
-			<a href="index.html"><img src="imagenes/logo.svg" class="logo" alt="logo Startit"></a>
-				<ul class="nav justify-content-end">
-					<li class="">
-						<a href="servicios.html">SERVICIOS</a>
-					</li>
-					<li>
-						<a href="trabajos.html">TRABAJOS</a>
-					</li>
-					<li>
-						<a href="nosotros.html">NOSOTROS</a>
-					</li>
-					<li>
-						<a href="contactanos.html">CONTACTANOS
-						</a>
-					</li>
-				</ul>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top navbarStyle py-3 px-3">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html">
+		    <img src="imagenes/logo.svg" width="100" class="d-inline-block align-top" alt="Logo Startit">
+  			</a>
+ 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button> 			
+  			<div class="collapse navbar-collapse justify-content-end " id="navbarTogglerDemo01">
+  				<div class="navbar-nav">
+				    <a class="nav-item nav-link" href="servicios.html">SERVICIOS</a>
+				    <a class="nav-item nav-link" href="trabajos.html">TRABAJOS</a>
+				    <a class="nav-item nav-link" href="nosotros.html">NOSOTROS</a>
+				    <a class="nav-item nav-link" href="contactanos.html" tabindex="-1" aria-disabled="true">CONTACTANOS</a>
+				</div>
+  			</div>
+		</div>
 		</nav>
 	</header>
-
+	<!--Banner-->
+	<section class="fondoBanner animate__animated animate__fadeIn">
+	<div class="container spacingMt65 py-3 px-3">
+		<div class="row">
+			<!--Texto + CTA-->
+			<div class="bannerText col-xs-12 col-sm-11 col-md-6 col-lg-6 align-self-center animate__animated animate__fadeInLeft">
+				<p class="">Transformamos ideas en hechos</p>
+				<button class="boton transition shadow" type="button">Conocer más</button>
+			</div>
+			<!--Imagen Banner-->
+			<div class="col-12 col-sm-12 col-md-6 col-lg-6 animate__animated animate__fadeInRight">
+				<img src="imagenes/imagenBanner.jpg" class="img-fluid" alt="banner">
+			</div>
+		</div>
+	</div>
+	</section>
+	<!--Sección: ¿Cómo lo hacemos?-->
 	<section>
-		<div class="banner">
-			<img src="imagenes/bannerHome.jpg" class="banner" alt="banner">
+		<div class="container mt-5">
+			<h2>¿Cómo lo hacemos?</h2>
 		</div>
-		<div class="inicioTitle">
-			<p>¿Cómo lo hacemos?</p>
-		</div>
-		<div class="gridInicio">
-			<article class="articleIni1 card" style="width: 25rem;">
-				<img src="imagenes/iconohome1.svg" class="imgArticle card-img-top">
-				<div class="card-body">
-					<p class="articleTitle">Escucha y análisis</p>
-					<p class="articleText">Nos juntamos para conocer tu negocio o idea, y analizamos la mejor solución</p>
+		<div class="container pt-4">
+			<div class="row justify-content-around">
+				<div class="card shadow col-md-3 col-lg-3 spacingMrl10 border-0" style="width: 22rem">
+					<img src="imagenes/iconohome1.svg" class="card-img-top img-fluid">
+					<div class="card-body">
+						<h5>Escucha y análisis</h5>
+						<p class="h5BodyText">Nos juntamos para conocer tu negocio o idea, y analizamos la mejor solución</p>
+					</div>
 				</div>
-			</article>
-			<article class="articleIni2 card" style="width: 25rem;">
-				<img src="imagenes/iconohome2.svg" class="imgArticle card-img-top">
-				<div class="card-body">
-					<p class="articleTitle">Desarrollo</p>
-					<p class="articleText">Trabajamos en tu proyecto, con resultados que podés ver en tiempo real</p>
+				<div class="card shadow col-md-3 col-lg-3 spacingMrl10 border-0" style="width: 22rem">
+					<img src="imagenes/iconohome2.svg" class="card-img-top img-fluid">
+					<div class="card-body">
+						<h5 class="text-center">Desarrollo</h5>
+						<p class="h5BodyText">Trabajamos en tu proyecto, con resultados que podés ver en tiempo real</p>
+					</div>
 				</div>
-			</article>
-			<article class="articleIni3 card" style="width: 25rem;">
-				<img src="imagenes/iconohome3.svg" class="imgArticle card-img-top">
-				<div class="card-body">
-					<p class="articleTitle">Implementación y soporte</p>
-					<p class="articleText">Ponemos todo en marcha, hacemos un seguimiento y brindamos soporte</p>
+				<div class="card shadow col-md-3 col-lg-3 spacingMrl10 border-0" style="width: 22rem">
+					<img src="imagenes/iconohome3.svg" class="card-img-top img-fluid">
+					<div class="card-body">
+						<h5 class="text-center">Implementación y soporte</h5>
+						<p class="h5BodyText">Ponemos todo en marcha, hacemos un seguimiento y brindamos soporte</p>
+					</div>
 				</div>
-			</article>
+			</div>
 		</div>
 	</section>
-	<footer class="footer">
-		<div>	
-			<img src="imagenes/facebook.svg" alt="facebook" class="iconorrss">
+	<!--Sección: Todos nuestro trabajos incluyen-->
+	<section class="container-fluid fondo spacingP35M60">
+		<div class="container">
+			<h2>Todos nuestros trabajos incluyen</h2>
 		</div>
-		<div>
-			<img src="imagenes/instagram.svg" alt="instagram" class="iconorrss">
+		<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-7 align-self-center">
+						<dl class="spacingPl35">
+							<dt class="SectionHome2TitleList">Diseño Responsive</dt>
+							<dd class="h5BodyText">Para que todos puedan acceder a tu sitio desde cualquier dispositivo y tengan la misma experiencia.</dd>
+							<dt class="SectionHome2TitleList">User friendly</dt>
+							<dd class="h5BodyText">Trabajamos con la visión de la experiencia de usuario (UX) para que la experiencia sea la mejor en tu sitio. </dd>
+							<dt class="SectionHome2TitleList">Sitios autoadministrables</dt>
+							<dd class="h5BodyText">Podés modificar tu sitio cuando lo necesites.</dd>
+							<dt class="SectionHome2TitleList">Diseño único y personal</dt>
+							<dd class="h5BodyText">Le damos a cada proyecto un toque único y personal</dd>
+							<dt class="SectionHome2TitleList">Soporte y capacitación</dt>
+							<dd class="h5BodyText">Damos soporte post venta. Y enseñamos a utilizar el gestor de contenidos (ej: cargar productos, escribir artículos, etc).</dd>
+							<dt class="SectionHome2TitleList">Dominios y hosting</dt>
+							<dd class="h5BodyText">Registramos dominios y realizamos los trámites de contratación del hosting. </dd>
+						</dl>
+					</div>
+					<div class="col-5 d-none d-md-block">
+						<img src="imagenes/Hometrabajos.svg" alt="Ilustracion" class="float-right img-fluid">
+					</div>
+
+				</div>
 		</div>
-		<div>
-			<a href="https://www.linkedin.com/in/claudiaameza/"></a><img src="imagenes/linkedin.svg" alt="linkedin" class="iconorrss"></a>
+	</section>
+	<!--Sección: Llevamos tu negocio al mundo digital-->
+	<section  class="spacingCarousel">
+		<div class="container">
+			<div class="row">
+				<!--Carousel-->
+				<div id="carouselExampleSlidesOnly" class="fondoCarousel carousel slide newCarousel col-12 col-md-6 col-lg-5 spacingP35" data-ride="carousel">
+					<div class="carousel-inner ">
+		    			<div class="carousel-item active">
+		        			<img src="imagenes/casoHome1.jpg" class="d-block w-20 img-fluid" alt="carousel">
+		    			</div>
+		    			<div class="carousel-item">
+		      				<img src="imagenes/casoHome2.jpg" class="d-block w-20 img-fluid" alt="carousel">
+		    			</div>
+		    			<div class="carousel-item">
+		      			<img src="imagenes/casoHome3.jpg" class="d-block w-20 img-fluid" alt="carousel">
+		    			</div>
+		    			<div class="carousel-item">
+		      			<img src="imagenes/casoHome4.jpg" class="d-block w-20 img-fluid" alt="carousel">
+		    			</div>
+		  			</div>
+				</div>
+				<!--Texto + CTA-->
+				<div class="col-12 col-md-6 col-lg-5 align-self-center spacingMt35l80">
+					<h3>Llevamos tu negocio al mundo digital de manera simple </h3>
+					<button class="boton transition shadow" type="button">Ver servicios</button>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--Footer-->
+	<footer class="">
+		<div class="container">
+			<div class="row">
+				<!--Copyright-->
+				<div class="col align-self-start">
+					<h6>&copy; 2020 Claudia Apaza Meza</h6>
+				</div>
+				<!--Redes sociales-->
+				<div class="align-self-end">
+					<ul class="col list-unstyled">
+					<li class="d-flex">
+						<img src="imagenes/facebook.svg" alt="Logo Facebook" class="rrss">
+						<img src="imagenes/instagram.svg" alt="Logo Instagram" class="rrss">
+						<a href="https://www.linkedin.com/in/claudiaameza/"></a><img src="imagenes/linkedin.svg" alt="Logo Linkedin" class="rrss"></a>
+					</li>
+				</ul>
+				</div>
+			</div>
 		</div>
 	</footer>
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>

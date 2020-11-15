@@ -8,51 +8,56 @@
 	<title>Contactanos | Start-it</title>
         <!-- CSS only -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-	<!-- JS, Popper.js, and jQuery -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+	<!-- Fuentes -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<!-- FavIcon -->
+	<link rel="icon" href="imagenes/favicon.ico"/>
+	<!-- Estilos -->
 	<link rel="stylesheet" href="css/estilos.css"/>
 </head>
 <body>
-	<header>
-		<nav class="nav">
-			<a href="index.html"><img src="imagenes/logo.svg" class="logo" alt="logo Startit"></a>
-			<ul class="nav justify-content-end">
-				<li class="">
-					<a href="servicios.html">SERVICIOS</a>
-				</li>
-				<li>
-					<a href="trabajos.html">TRABAJOS</a>
-				</li>
-				<li>
-					<a href="nosotros.html">NOSOTROS</a>
-				</li>
-				<li>
-					<a href="contactanos.html">CONTACTANOS
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-<section>
-	<div class="sectionName">
-		<p class="sectionTitle">CONTACTANOS</p>
-		<P class="sectionText" >No dude en consultarnos si tiene una idea o quiere mejorar algun proceso.<br>¡Podemos hacerlo!</P>
+<!--navBar-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top navbarStyle py-3 px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+            <img src="imagenes/logo.svg" width="100" class="d-inline-block align-top" alt="Logo Startit">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>           
+            <div class="collapse navbar-collapse justify-content-end " id="navbarTogglerDemo01">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="servicios.html">SERVICIOS</a>
+                    <a class="nav-item nav-link" href="trabajos.html">TRABAJOS</a>
+                    <a class="nav-item nav-link" href="nosotros.html">NOSOTROS</a>
+                    <a class="nav-item nav-link" href="contactanos.html" tabindex="-1" aria-disabled="true">CONTACTANOS</a>
+                </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+<!--Sección: Contactanos-->
+<section class="container-fluid">
+	<div class="sectionTitle">
+		<h1>CONTACTANOS</h1>
+		<P class="sectionText" >No dude en consultarnos si tiene una idea o quiere mejorar algun proceso.<br><strong>¡Podemos hacerlo!</strong></P>
 	</div>
-	<div class="gridContactanos">
-		<div class="datosContacto">
-			<img src="imagenes/llamar.svg" alt="telefono" class="rounded float-left icono">
+</section>
+<section class="container">
+	<div class="row">
+		<!--Datos de contacto-->
+		<div class="col-sm-12 col-md-6">
+			<img src="imagenes/llamar.svg" alt="Telefono de contacto" class="float-left mt-3 icono">
 			<p class="ContactoText">4545-4545</p>
-			<img src="imagenes/mail.svg" alt="mail" class="rounded float-left icono">
+			<img src="imagenes/mail.svg" alt="Dirección de mail" class="float-left icono">
 			<p class="ContactoText">mail@mail.com</p>
-	        <img src="imagenes/mapa.svg" alt="mapa" class="rounded float-left icono">
+	        <img src="imagenes/mapa.svg" alt="Dirección" class="float-left icono">
 			<p class="ContactoText">Avenida calle 123 - Buenos Aires</p>
-			<img src="imagenes/mapa.png" alt="mapa" class="mapa">
+			<img src="imagenes/mapa.png" alt="Ubicación en mapa" class="mapa">
 		</div>
-		<div class="formulario formText">
+		<!--Formulario de Contacto-->
+		<div class="col-sm-12 col-md-6 spacingForm formText">
 			<form action="#" method="Post" class="texto">
 				 <div class="form-row">
 	    			<div class="form-group col-md-6">
@@ -70,7 +75,7 @@
 				</div>
 				<div class="form-group">
 	      			<label for="inputState">Servicio que te interesa</label>
-	      			<select id="inputState" class="form-control">
+	      			<select id="inputState" class="form-control formText">
 	        			<option selected>Elegí un servicio</option>
 	        			<option>Desarrollo Web</option>
 	        			<option>DEsarrollo de app</option>
@@ -88,24 +93,35 @@
 				    <input type="checkbox" class="form-check-input" id="exampleCheck1">
 				    <label class="form-check-label" for="exampleCheck1">Deseo suscribirme al newsletter</label>
 				</div>
-				<button class="boton transition" type="Reset" name="Reset" value="Limpiar formulario">Limpiar formulario</button>
-				<button class="boton transition" type="Submit" name="Submit" value="Enviar formulario">Enviar formulario</button>
+				<button class="botonForm transitionBtnForm shadow" type="Reset" name="Reset" value="Limpiar formulario">Limpiar formulario</button>
+				<button class="botonForm transitionBtnForm shadow" type="Submit" name="Submit" value="Enviar formulario">Enviar formulario</button>
 			</form>
 		</div>
 	</div>
 </section>
-	
-
-	<footer class="footer">
-		<div>	
-			<img src="imagenes/facebook.svg" alt="facebook" class="iconorrss">
-		</div>
-		<div>
-			<img src="imagenes/instagram.svg" alt="instagram" class="iconorrss">
-		</div>
-		<div>
-			<a href="https://www.linkedin.com/in/claudiaameza/"></a><img src="imagenes/linkedin.svg" alt="linkedin" class="iconorrss"></a>
+	<footer class="">
+		<div class="container">
+			<div class="row">
+				<!--Copyright-->
+				<div class="col align-self-start">
+					<h6>&copy; 2020 Claudia Apaza Meza</h6>
+				</div>
+				<!--Redes sociales-->
+				<div class="align-self-end">
+					<ul class="col list-unstyled">
+					<li class="d-flex">
+						<img src="imagenes/facebook.svg" alt="Logo facebook" class="rrss">
+						<img src="imagenes/instagram.svg" alt="Logo instagram" class="rrss">
+						<a href="https://www.linkedin.com/in/claudiaameza/"></a><img src="imagenes/linkedin.svg" alt="Logo linkedin" class="rrss"></a>
+					</li>
+				</ul>
+				</div>
+			</div>
 		</div>
 	</footer>
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>

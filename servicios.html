@@ -8,82 +8,100 @@
     <title>Nuestros servicios | Start-it</title>
         <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- FavIcon -->
+    <link rel="icon" href="imagenes/favicon.ico"/>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/estilos.css"/>
+</head>
 
+<body>
+    <!--navBar-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top navbarStyle py-3 px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+            <img src="imagenes/logo.svg" width="100" class="d-inline-block align-top" alt="Logo Startit">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>           
+            <div class="collapse navbar-collapse justify-content-end " id="navbarTogglerDemo01">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="servicios.html">SERVICIOS</a>
+                    <a class="nav-item nav-link" href="trabajos.html">TRABAJOS</a>
+                    <a class="nav-item nav-link" href="nosotros.html">NOSOTROS</a>
+                    <a class="nav-item nav-link" href="contactanos.html" tabindex="-1" aria-disabled="true">CONTACTANOS</a>
+                </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <!--Sección: Servicios-->
+	<section class="container-fluid"> 
+        <div class="sectionTitle">
+            <h1>SERVICIOS</h1>
+            <p class="sectionText">Ofrecemos diferentes servicios y soluciones creativas para atender las necesidades de su proyecto</p>
+        </div>
+    </section>
+    </section>
+    <section class="container">
+        <div class="row justify-content-around">
+            <div class="card shadow border-0 col-sm-12 col-md-5 spacingMtb40" style="width: 18rem;">
+                <img src="imagenes/iconoServicios1.svg" class="card-img-top img-fluid" alt="Servicio de Desarrollo Web">
+                <div class="card-body">
+                    <h5>Desarrollo web</h5>
+                    <p class="h5BodyText">Desarrollo de páginas web auto-administrables para empresas, PyMEs y emprendedores. Ideal para proyectos de gran envergadura. Ecommerce.</p>
+                </div>
+            </div>
+             <div class="card shadow border-0 col-sm-12 col-md-5 spacingMtb40" style="width: 18rem;">
+                <img src="imagenes/iconoServicios2.svg" class="card-img-top img-fluid" alt="Servicio de Desarrollo de aplicación">
+                <div class="card-body">
+                    <h5>Desarrollo de app</h5>
+                    <p class="h5BodyText">Desarrollo apuntado tanto a satisfacer funcionalidades determinadas para empresas, como aplicaciones de uso masivo. Desarrollos en iOS y Android.</p>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="card shadow border-0 col-sm-12 col-md-5 spacingMtb40" style="width: 18rem;">
+                <img src="imagenes/iconoServicios3.svg" class="card-img-top img-fluid" alt="Servicio de Diseño web a medida">
+                <div class="card-body">
+                    <h5>Diseño web a medida</h5>
+                    <p class="h5BodyText">Creamos páginas web a medida con alto nivel gráfico, intuitivas, emotivas, aplicando diseño inteligente que cumpla con sus objetivos de negocio.</p>
+                </div>
+            </div>
+            <div class="card shadow border-0 col-sm-12 col-md-5 spacingMtb40" style="width: 18rem;">
+                <img src="imagenes/iconoServicios4.svg" class="card-img-top img-fluid" alt="Servicio de Consultoría y diseño de experiencia del usuario">
+                <div class="card-body">
+                    <h5>Consultoría y Diseño UX</h5>
+                    <p class="h5BodyText">Trabajamos para mejorar la experiencia que le ofreces a tus clientes, diseñando productos y servicios digitales que entreguen experiencias significativas y relevantes para que puedas alcanzar los objetivos y metas de tu negocio.</p>
+                </div>
+            </div>       
+        </div>
+    </section>
+    <footer class="">
+        <div class="container">
+            <div class="row">
+                <!--Copyright-->
+                <div class="col align-self-start">
+                    <h6>&copy; 2020 Claudia Apaza Meza</h6>
+                </div>
+                <!--Redes sociales-->
+                <div class="align-self-end">
+                    <ul class="col list-unstyled">
+                    <li class="d-flex">
+                        <img src="imagenes/facebook.svg" alt="Logo facebook" class="rrss">
+                        <img src="imagenes/instagram.svg" alt="Logo instagram" class="rrss">
+                        <a href="https://www.linkedin.com/in/claudiaameza/"></a><img src="imagenes/linkedin.svg" alt="Logo linkedin" class="rrss"></a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/estilos.css"/>
-</head>
-
-<body>
-	<header>
-		<nav class="nav">
-			<a href="index.html"><img src="imagenes/logo.svg" class="logo" alt="logo Startit"></a>
-			<ul class="nav justify-content-end">
-                <li class="">
-                    <a href="servicios.html">SERVICIOS</a>
-                </li>
-                <li>
-                    <a href="trabajos.html">TRABAJOS</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="contactanos.html">CONTACTANOS
-                    </a>
-                </li>
-            </ul>
-		</nav>
-	</header>
-	<section>
-        <div class="sectionName"> <!--class="titleSection servicios"-->
-            <p class="sectionTitle">SERVICIOS</p>
-            <p class="sectionText">Ofrecemos diferentes servicios y soluciones creativas para atender las necesidades de su proyecto</p>
-        </div>
-        <div class="gridServicios">
-            <article class="boxWeb card" style="width: 25rem;"> <!-- class="articleServicios webBox"-->
-                <img src="imagenes/iconoServicios1.svg" class="card-img-top imgArticle">
-                <div class="card-body">
-                    <p class="articleTitle">Desarrollo web</p>
-                    <P class="articleText">Desarrollo de páginas web auto-administrables para empresas, PyMEs y emprendedores. Ideal para proyectos de gran envergadura. Ecommerce.</P>
-                </div>
-            </article>
-            <article class="boxApp card" style="width: 25rem;"> <!--class="articleServicios appBox"-->
-                <img src="imagenes/iconoServicios2.svg" class="card-img-top imgArticle">
-                <div class="card-body">
-                    <p class="articleTitle">Desarrollo de app</p>
-                    <P class="articleText">Desarrollo apuntado tanto a satisfacer funcionalidades determinadas para empresas, como aplicaciones de uso masivo. Desarrollos en iOS y Android.</P>
-                </div>
-            </article>
-            <article class="boxDisenio card" style="width: 25rem;"> <!-- class="articleServicios disenioBox"-->
-                <img src="imagenes/iconoServicios3.svg" class="card-img-top imgArticle">
-                <div class="card-body">
-                    <p class="articleTitle">Diseño web a medida</p>
-                    <P class="articleText">Creamos páginas web a medida con alto nivel gráfico, intuitivas, emotivas, aplicando diseño inteligente que cumpla con sus objetivos de negocio.</P>
-                </div>
-            </article>
-            <article class="boxUx card" style="width: 25rem;"> <!-- class="articleServicios uxBox"-->
-                <img src="imagenes/iconoServicios4.svg" class="card-img-top imgArticle"> <!--d-block mx-auto -->
-                <div class="card-body">
-                    <p class="articleTitle">Consultoría y Diseño UX</p>
-                    <P class="articleText">Trabajamos para mejorar la experiencia que le ofreces a tus clientes, diseñando productos y servicios digitales que entreguen experiencias significativas y relevantes para que puedas alcanzar los objetivos y metas de tu negocio.</P>
-                </div>
-            </article>
-        </div> 
-    </section>
-	<footer class="footer">
-		<div>	
-			<img src="imagenes/facebook.svg" alt="facebook" class="iconorrss">
-		</div>
-		<div>
-			<img src="imagenes/instagram.svg" alt="instagram" class="iconorrss">
-		</div>
-		<div>
-			<a href="https://www.linkedin.com/in/claudiaameza/"></a><img src="imagenes/linkedin.svg" alt="linkedin" class="iconorrss"></a>
-		</div>
-	</footer>
 </body>
 </html>

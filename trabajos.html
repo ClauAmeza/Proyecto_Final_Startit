@@ -8,74 +8,96 @@
   <title>Nuestros trabajos | Start-it</title>
 	        <!-- CSS only -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+	<!-- FavIcon -->
+  <link rel="icon" href="imagenes/favicon.ico"/>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/estilos.css"/>
+</head>
 
+<body>
+  <!--navBar-->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top navbarStyle py-3 px-3 ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="imagenes/logo.svg" width="100" class="d-inline-block align-top" alt="Logo Startit">
+        </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>       
+        <div class="collapse navbar-collapse justify-content-end " id="navbarTogglerDemo01">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="servicios.html">SERVICIOS</a>
+            <a class="nav-item nav-link" href="trabajos.html">TRABAJOS</a>
+            <a class="nav-item nav-link" href="nosotros.html">NOSOTROS</a>
+            <a class="nav-item nav-link" href="contactanos.html" tabindex="-1" aria-disabled="true">CONTACTANOS</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+  </header>
+<!--Sección: Trabajos-->
+  <section class="container-fluid">
+      <div class="sectionTitle">
+          <h1>TRABAJOS</h1>
+          <P class="sectionText" >Nos apasiona crear soluciones web y aplicaciones de éxito para nuestros clientes. Así como nnovación y experiencia en nuestros desarrolladores para entregar proyectos a tiempo y mantener los estándares de código de primer nivel.</P>
+      </div>
+  </section>
+  <section class="container">
+      <div class="row justify-content-around">
+        <div class="col-sm-12 col-md-5 spacingMtb40">
+            <div class="">
+                <img src="imagenes/trabajo1.png" class="img-fluid shadow" alt="Muestra de trabajos">
+            </div>
+         </div>
+         <div class="col-sm-12 col-md-5 spacingMtb40">
+            <div class="">
+                <img src="imagenes/trabajo2.png" class="img-fluid shadow" alt="Muestra de trabajos">
+            </div>
+         </div>
+         <div class="w-100"></div>
+        <div class="col-sm-12 col-md-5 spacingMtb40">
+            <div class="">
+                <img src="imagenes/trabajo3.png" class="img-fluid shadow" alt="Muestra de trabajos">
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-5 spacingMtb40">
+            <div class="">
+                <img src="imagenes/trabajo4.png" class="img-fluid shadow" alt="Muestra de trabajos">
+            </div>
+        </div>
+      </div>
+  </section>
+  <section class="container-fluid fondo spacingP35">
+    <div class="row justify-content-center">
+      <button class="boton transition shadow" type="button">Contactanos</button>
+    </div>
+  </section>
+  <footer class="">
+    <div class="container">
+      <div class="row">
+        <!--Copyright-->
+        <div class="col align-self-start">
+          <h6>&copy; 2020 Claudia Apaza Meza</h6>
+        </div>
+        <!--Redes sociales-->
+        <div class="align-self-end">
+          <ul class="col list-unstyled">
+          <li class="d-flex">
+            <img src="imagenes/facebook.svg" alt="Logo facebook" class="rrss">
+            <img src="imagenes/instagram.svg" alt="Logo instagram" class="rrss">
+            <a href="https://www.linkedin.com/in/claudiaameza/"></a><img src="imagenes/linkedin.svg" alt="Logo linkedin" class="rrss"></a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
     <!-- JS, Popper.js, and jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/estilos.css"/>
-</head>
-
-<body>
-	<header>
-		<nav class="nav">
-			<a href="index.html"><img src="imagenes/logo.svg" class="logo" alt="logo Startit"></a>
-			<ul class="nav justify-content-end">
-        <li class="">
-          <a href="servicios.html">SERVICIOS</a>
-        </li>
-        <li>
-          <a href="trabajos.html">TRABAJOS</a>
-        </li>
-        <li>
-          <a href="nosotros.html">NOSOTROS</a>
-        </li>
-        <li>
-          <a href="contactanos.html">CONTACTANOS
-          </a>
-        </li>
-      </ul>
-		</nav>
-	</header>
-    <section>
-        <div class="sectionName"> <!--class="titleSection trabajos"-->
-            <p class="sectionTitle">TRABAJOS</p>
-            <P class="sectionText" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste dicta reiciendis.</P>
-        </div>
-        <div class="gridTrabajos">
-          <article class=" article trabajo1">
-              <div class="articleBox">
-                  <img src="imagenes/trabajo1.png"  alt="Trabajo1">
-              </div>
-           </article>
-           <article class=" article trabajo2">
-              <div class="articleBox">
-                  <img src="imagenes/trabajo2.png"  alt="Trabajo2">
-              </div>
-           </article>
-          <article class="article trabajo3">
-              <div class="articleBox">
-                  <img src="imagenes/trabajo3.png"  alt="Trabajo3">
-              </div>
-          </article>
-          <article class="article trabajo4">
-              <div class="articleBox">
-                  <img src="imagenes/trabajo4.png"  alt="Trabajo4">
-              </div>
-          </article>
-        </div>
-    </section>
-	<footer class="footer">
-		<div>	
-			<img src="imagenes/facebook.svg" alt="facebook" class="iconorrss">
-		</div>
-		<div>
-			<img src="imagenes/instagram.svg" alt="instagram" class="iconorrss">
-		</div>
-		<div>
-			<a href="https://www.linkedin.com/in/claudiaameza/"></a><img src="imagenes/linkedin.svg" alt="linkedin" class="iconorrss"></a>
-		</div>
-	</footer>
 </body>
 </html>

@@ -8,95 +8,100 @@
     <title>Sobre nosotros | Start-it</title>
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-    <!-- jQuery and JS bundle w/ Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/estilos.css"/>
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+	<!-- FavIcon -->
+    <link rel="icon" href="imagenes/favicon.ico"/>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/estilos.css"/>
 </head>
 <body>
-	<header>
-		<nav>
-			<a href="index.html"><img src="imagenes/logo.svg" class="logo" alt="logo Startit"></a>
-			<ul class="nav justify-content-end">
-                <li class="">
-                    <a href="servicios.html">SERVICIOS</a>
-                </li>
-                <li>
-                    <a href="trabajos.html">TRABAJOS</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="contactanos.html">CONTACTANOS
-                    </a>
-                </li>
-             </ul>
-		</nav>
-	</header>
-	<section>
-        <div class="sectionName nosotros">
-            <p class="sectionTitle">NOSOTROS</p>
+    <!--navBar-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top navbarStyle py-3 px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+            <img src="imagenes/logo.svg" width="100" class="d-inline-block align-top" alt="Logo Startit">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>           
+            <div class="collapse navbar-collapse justify-content-end " id="navbarTogglerDemo01">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="servicios.html">SERVICIOS</a>
+                    <a class="nav-item nav-link" href="trabajos.html">TRABAJOS</a>
+                    <a class="nav-item nav-link" href="nosotros.html">NOSOTROS</a>
+                    <a class="nav-item nav-link" href="contactanos.html" tabindex="-1" aria-disabled="true">CONTACTANOS</a>
+                </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+<!--Sección: Nosotros-->
+	<section class="container-fluid">
+        <div class="sectionTitle">
+            <h1>NOSOTROS</h1>
             <p class="sectionText">Somos un equipo de desarrollo y diseño, conformado por expertos en diferentes campos. 
             Nuestro objetivo es mejorar la calidad en que las empresas se desenvuelven en la era digital para que puedan atraer nuevos clientes y potenciar sus negocios.
             </p> 
         </div>
-        <!--<div class="nosotros1">
-            <img src="imagenes/perfilAnalia.jpg" class="fotoPerfil">
-            <P class="articleText">Claudia Spinetta
-            <br>
-            Diseñadora UX y desarrolladora Front-end</P>
-        </div>-->
-        <div class="gridNosotros">
-             <div class="card nosotros1" style="width: 18rem;"> <!--width: 18rem;-->
-                <img src="imagenes/perfilAnalia.jpg" class="card-img-top fotoPerfil" alt="Analia">
+    </section>
+    <section class="container">
+        <div class="row justify-content-around">
+             <div class="card shadow border-0 col-12 col-sm-12 col-md-5 col-lg spacingMrl10" style="width: 10rem;">
+                <img src="imagenes/perfilAnalia.jpg" class="card-img-top mg-fluid rounded-circle mt-3" alt="Claudia Spinetta">
                 <div class="card-body">
-                    <p class="card-text articleText"><strong>Claudia Spinetta</strong>
-                <br>
-                Diseñadora UX y desarrolladora Front-end.</p>
+                    <h5>Claudia Spinetta</h5>
+                    <p class="h5BodyText text-center">Diseñadora UX y desarrolladora Front-end.</p>
                 </div>
             </div>
-            <div class="card nosotros2" style="width: 18rem;">
-                <img src="imagenes/perfilCarla.jpg" class="card-img-top fotoPerfil" alt="Analia">
+            <div class="card shadow border-0 col-12 col-sm-12 col-md-5 col-lg spacingMrl10" style="width: 10rem;">
+                <img src="imagenes/perfilCarla.jpg" class="card-img-top mg-fluid rounded-circle mt-3" alt="Carla Garcia">
                 <div class="card-body">
-                    <p class="card-text articleText"><strong>Carla Garcia</strong>
-                <br>
-                Desarrolladora Back-end</P>
+                    <h5>Carla Garcia</h5>
+                    <p class="h5BodyText text-center">Desarrolladora Back-end</P>
                 </div>
             </div>
-            <div class="card nosotros3" style="width: 18rem;">
-                <img src="imagenes/perfilJulieta.jpg" class="card-img-top fotoPerfil" alt="Analia">
+            <div class="card shadow border-0 col-12 col-sm-12 col-md-5 col-lg spacingMrl10" style="width: 10rem;">
+                <img src="imagenes/perfilJulieta.jpg" class="card-img-top mg-fluid rounded-circle mt-3" alt="Julieta Cantoni">
                 <div class="card-body">
-                    <p class="card-text articleText"><strong>Julieta Cantoni</strong>
-                <br>
-                Desarrolladora Front-end</P>
+                    <h5>Julieta Cantoni</h5>
+                    <p class="h5BodyText text-center">Desarrolladora Front-end</P>
                 </div>
             </div>
-            <div class="card nosotros4" style="width: 18rem;">
-                <img src="imagenes/perfilJavier.jpg" class="card-img-top fotoPerfil" alt="Analia">
+            <div class="card shadow border-0 col-12 col-sm-12 col-md-5 col-lg spacingMrl10" style="width: 10rem;">
+                <img src="imagenes/perfilJavier.jpg" class="card-img-top mg-fluid rounded-circle mt-3" alt="Javier Nachon">
                 <div class="card-body">
-                    <p class="card-text articleText"><strong>Javier Nachon</strong>
-                <br>
-                Diseñador gráfico-UI/UX</P>
+                    <h5>Javier Nachon</h5>
+                    <p class="h5BodyText text-center">Diseñador gráfico-UI/UX</P>
                 </div>
             </div>
         </div>
            
        
     </section>
-	<footer class="footer">
-		<div>	
-			<img src="imagenes/facebook.svg" alt="facebook" class="iconorrss">
-		</div>
-		<div>
-			<img src="imagenes/instagram.svg" alt="instagram" class="iconorrss">
-		</div>
-		<div>
-			<a href="https://www.linkedin.com/in/claudiaameza/"></a><img src="imagenes/linkedin.svg" alt="linkedin" class="iconorrss"></a>
-		</div>
-	</footer>	
-	
+    <footer class="">
+        <div class="container">
+            <div class="row">
+                <!--Copyright-->
+                <div class="col align-self-start">
+                    <h6>&copy; 2020 Claudia Apaza Meza</h6>
+                </div>
+                <!--Redes sociales-->
+                <div class="align-self-end">
+                    <ul class="col list-unstyled">
+                    <li class="d-flex">
+                        <img src="imagenes/facebook.svg" alt="Logo facebook" class="rrss">
+                        <img src="imagenes/instagram.svg" alt="Logo instagram" class="rrss">
+                        <a href="https://www.linkedin.com/in/claudiaameza/"></a><img src="imagenes/linkedin.svg" alt="Logo linkedin" class="rrss"></a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </footer>	
+<!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
