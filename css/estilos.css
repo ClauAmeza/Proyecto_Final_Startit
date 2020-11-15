@@ -163,6 +163,42 @@ h6 {
   padding: 35px 0px 35px 0px;
   margin: 60px 0px 60px 0px; }
 
+@media screen and (max-width: 412px) {
+  .bannerText {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 32px; }
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #0455BF;
+    font-weight: 600;
+    font-weight: 700;
+    font-size: 32px; }
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 500; }
+  .spacingCarousel {
+    padding: 0px;
+    margin: 0px; }
+  .spacingMt35l80 {
+    margin: 0px; } }
+
+@media screen and (max-width: 995px) and (min-width: 765px) {
+  .bannerText {
+    padding-right: 35px; } }
+
+@media screen and (max-width: 992px) {
+  .spacingMrl10 {
+    margin: 30px 0px 30px 0px; } }
+
+@media screen and (max-width: 768px) {
+  .spacingForm {
+    margin-top: 60px; }
+  .spacingMt35l80 {
+    margin: 0px; } }
+
 footer {
   background-image: linear-gradient(to bottom, #0455BF, #000046);
   margin-top: 45px; }
@@ -173,35 +209,3 @@ footer {
       width: 22px;
       height: 22px;
       margin: 0px 10px 0px 10px; }
-  @media screen and (max-width: 412px) {
-    footer .bannerText {
-      font-family: "Montserrat", sans-serif;
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 32px; }
-    footer h1 {
-      font-family: "Montserrat", sans-serif;
-      color: #0455BF;
-      font-weight: 600;
-      font-weight: 700;
-      font-size: 32px; }
-    footer h3 {
-      font-family: "Montserrat", sans-serif;
-      font-size: 28px;
-      font-weight: 500; }
-    footer .spacingCarousel {
-      padding: 0px;
-      margin: 0px; }
-    footer .spacingMt35l80 {
-      margin: 0px; } }
-  @media screen and (max-width: 995px) and (min-width: 765px) {
-    footer .bannerText {
-      padding-right: 35px; } }
-  @media screen and (max-width: 992px) {
-    footer .spacingMrl10 {
-      margin: 30px 0px 30px 0px; } }
-  @media screen and (max-width: 768px) {
-    footer .spacingForm {
-      margin-top: 60px; }
-    footer .spacingMt35l80 {
-      margin: 0px; } }
