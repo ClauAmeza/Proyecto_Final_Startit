@@ -98,7 +98,8 @@ h6 {
 .transition:hover {
 	font-size: 19px;
 	padding: 14px 24px;
-	box-shadow: 2px 2px 5px #373B44;
+	text-decoration: none;
+	color: #ffffff;
 }
 .fondoBanner {
   background-image: url(../imagenes/curvaBanner.svg);
@@ -155,7 +156,7 @@ h6 {
 	padding: 0px 0px 0px 35px;
 }
 .spacingMt35l80 {
-	margin: 35px 0px 0px 80px;
+	margin: 0px 0px 0px 80px;
 }
 .spacingMt65 {
 	margin-top: 65px;
@@ -185,6 +186,9 @@ h6 {
 	}
 	.spacingMt35l80 {
 		margin: 0px;
+	}
+	.spacingPl35 {
+	padding: 0px;
 	}
 }
 @media screen and (max-width: 995px) and (min-width: 765px) {
